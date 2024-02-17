@@ -1,0 +1,32 @@
+++++++++++ Snapshot of data structures BEFORE ACTIVATION of Method check_drink_availability
+
+disp_flags = {list: 6} [True, True, True, True, True, True]
+dispenser = {MaterialsContainersDispenser} <vending_machine_simulator.MaterialsContainersDispenser object at 0x000002199CCED810>
+ materials_containers = {dict: 3} {'coffee': {'capacity': 50, 'volume': 50}, 'milk': {'capacity': 200, 'volume': 200}, 'water': {'capacity': 500, 'volume': 500}}
+  'coffee' = {dict: 2} {'capacity': 50, 'volume': 50}
+  'milk' = {dict: 2} {'capacity': 200, 'volume': 200}
+  'water' = {dict: 2} {'capacity': 500, 'volume': 500}
+  __len__ = {int} 3
+drink_flags = {list: 1} [True]
+drinks_menu = {DrinksMenu} <vending_machine_simulator.DrinksMenu object at 0x000002199CCED050>
+ drinks_menu = {dict: 1} {'cappuccino': {'bom': {'coffee': 24, 'milk': 100, 'water': 250}, 'command': '/c', 'price': 3.0}}
+vmo = {VendingMachineOperations} <vending_machine_simulator.VendingMachineOperations object at 0x000002199CCED790>
+ accepted_coins = {AcceptedCoinsDispenser} <vending_machine_simulator.AcceptedCoinsDispenser object at 0x000002199CD418D0>
+ drinks_menu = {DrinksMenu} <vending_machine_simulator.DrinksMenu object at 0x000002199CD41850>
+  drinks_menu = {dict: 0} {}
+ materials_dispenser = {MaterialsContainersDispenser} <vending_machine_simulator.MaterialsContainersDispenser object at 0x000002199CD41290>
+  materials_containers = {dict: 0} {}
+  
+  
+++++++++++ Snapshot of data structures ONCE ACTIVATION of Method check_drink_availability is executed
+  
+  self.materials_dispenser.materials_containers = {dict: 0} {}
+ordered_drink = {str} 'cappuccino'
+self = {VendingMachineOperations} <vending_machine_simulator.VendingMachineOperations object at 0x000002199CCED790>
+ accepted_coins = {AcceptedCoinsDispenser} <vending_machine_simulator.AcceptedCoinsDispenser object at 0x000002199CD418D0>
+  accepted_coins = {dict: 0} {}
+ drinks_menu = {DrinksMenu} <vending_machine_simulator.DrinksMenu object at 0x000002199CD41850>
+  drinks_menu = {dict: 0} {}
+ materials_dispenser = {MaterialsContainersDispenser} <vending_machine_simulator.MaterialsContainersDispenser object at 0x000002199CD41290>
+  materials_containers = {dict: 0} {}
+   __len__ = {int} 0
